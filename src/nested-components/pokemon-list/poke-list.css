@@ -1,0 +1,57 @@
+.pokeList {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    height: 100%;
+}
+
+.pokeList__row {
+    border-width: 10px;
+    border-color: lawngreen;
+    height: 15%;
+    margin-bottom: 5%;
+}
+
+.pokeList__button {
+    background-color: rgb(226, 226, 226);
+    border-radius: 25px;
+    width: 95%;
+    height: 100%;
+    margin-bottom: 100px;
+    border-width: 0;
+    font-weight: bold;
+}
+
+.pokeList__button:hover {
+    background: rgb(198, 197, 247);
+}
+
+.pokeList__section {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pokeList__button:focus {
+    background-color: rgb(144, 173, 153);
+}
+
+.section::-webkit-scrollbar {
+    width: 15px;
+}
+
+.section::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 20px;
+}
+
+.section::-webkit-scrollbar-thumb {
+    background-color: #808cc4;
+    border-radius: 100px;
+}

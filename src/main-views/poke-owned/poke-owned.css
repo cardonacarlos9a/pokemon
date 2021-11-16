@@ -1,0 +1,63 @@
+.poke-owned {
+    display: flex;
+    background-color: #080869;
+    flex-direction: column;
+    padding: 2%;
+    height: 100vh;
+}
+
+.poke-owned__search {
+    display: flex;
+    margin-bottom: 2%;
+    height: 100rem;
+
+}
+
+.poke-owned__list {
+    display: flex;
+    height: 75vh;
+}
+
+.poke-owned__displayed-pokemon {
+    display: flex;
+}
+
+.poke-owned__filter {
+    display: flex;
+    flex-direction: column;
+    border-color: rgb(109, 155, 224);
+    border-width: 2px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    width: 20%;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    height: 25%;
+}
+
+.pokeOwned__poke-details {
+    display: flex;
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    padding: 2%;
+}
+
+.poke-owned__filter-button {
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 5%;
+    height: 100%;
+    background-color: rgb(213, 216, 215);
+}
+
+.poke-owned__filter-button:active {
+    background-color: rgb(133, 146, 202);
+}

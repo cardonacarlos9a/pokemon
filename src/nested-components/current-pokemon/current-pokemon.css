@@ -1,0 +1,123 @@
+.current-pokemon {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.current-pokemon__left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+    max-width: 70%;
+    max-height: 100%;
+}
+
+.current-pokemon__right-column {
+    display: flex;
+    padding: 0;
+    height: 100px;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.current-pokemon__image {
+    display: flex;
+    background-color: rgb(226, 224, 224);
+    width: 60%;
+    border-radius: 6%;
+    padding: 5%;
+    height: 80%;
+}
+
+.current-pokemon__title {
+    display: flex;
+    flex-direction: row;
+    background-image: url('PokemonType.png');
+    width: 70%;
+    height: 20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 10%;
+}
+
+.current-pokemon_arrowBtn {
+    height: 70%;
+    width: 8%;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.buttonTextSize {
+    font-size: 13px;
+    color: rgb(76, 76, 182);
+}
+
+.current-pokemon__button {
+    border-radius: 30px 30px 30px 30px;
+    width: 40%;
+    height: 80%;
+    border: none;
+}
+
+.current-pokemon__button:active {
+    background-color: rgb(133, 146, 202);
+}
+
+.current-pokemon__catchBtn {
+    background-image: url('Catch.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.current-pokemon__detailsBtn {
+    background-image: url('Details.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.svg {
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: 0;
+    margin-left: -10;
+    padding: 0;
+    margin-bottom: 0;
+    width: 20px;
+    height: 52px;
+    background: 0;
+}
+
+.line {
+    stroke: rgb(255, 0, 0);
+    stroke-width: 3px;
+}
+
+.testClass {
+    background-color: rgb(45, 48, 43);
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.alignButton {
+    background-color: transparent;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2%;
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import PokeFullList from './main-views/poke-full-list/poke-full-list';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import usePokemon from './hooks/usePokemon';
+import PokeOwned from './main-views/poke-owned/poke-owned';
+import { useReducer } from 'react';
+import ownedPokemonReducer from './context/ownedPokemonReducer';
+import { OwnedPokemonContext } from './context/ownedPokemonContext';
 
 function App() {
+  const allPokemon = usePokemon();
+  const [capturedPokemon, dispatch] = useReducer(ownedPokemonReducer, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <OwnedPokemonContext.Provider value={{ capturedPokemon, dispatch }}>
+      <Router>
+        <div className="">
+          <Switch>
+            <Route path="/owned">
+              <PokeOwned allPokemon={allPokemon}></PokeOwned>
+            </Route>
+            <Route path="/">
+              <PokeFullList allPokemon={allPokemon}></PokeFullList>
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </OwnedPokemonContext.Provider>
+
   );
 }
 

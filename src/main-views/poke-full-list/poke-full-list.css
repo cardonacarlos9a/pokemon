@@ -1,0 +1,53 @@
+.pokeFullList {
+    display: flex;
+    background-color: #080869;
+    flex-direction: column;
+    padding: 2%;
+    padding-bottom: 6%;
+    position: relative;
+}
+
+.pokeFullList__search {
+    display: flex;
+    margin-bottom: 2%;
+    height: 11vh;
+}
+
+.pokeFullList__currentPokemon {
+    margin-left: 2%;
+    margin-right: 12px;
+    padding-left: 12px !important;
+    padding-right: 0 !important;
+    height: 100%;
+}
+
+.pokeFullList__list {
+    display: flex;
+    height: 70vh
+}
+
+.pokeFullList__poke-details {
+    display: flex;
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    padding: 2%;
+}
+
+.sample {
+    display: flex;
+    background-color: none;
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: flex-start;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+}
+
+.row-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
